@@ -24,6 +24,8 @@ public class Match {
 
     public void setId(int id) {
         this.id = id;
+        System.out.println("Match id: " + id);
+
     }
 
     public String getDate() {
@@ -40,6 +42,7 @@ public class Match {
 
     public void setEndroit(String endroit) {
         this.endroit = endroit;
+        System.out.println("Votre match a été fait: " + endroit);
     }
 
     @Override

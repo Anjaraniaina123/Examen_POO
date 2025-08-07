@@ -55,4 +55,15 @@ public class Combattants {
         this.listeDeTitre = listeDeTitre;
     }
 
+
+    @Override
+    public String toString() {
+        return "Combattants{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", nomCombattants='" + nomCombattants + '\'' +
+                ", poids='" + poids + '\'' +
+                ", listeDeTitre='" + listeDeTitre + '\'' +
+                '}';
+    }
 }

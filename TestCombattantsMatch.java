@@ -6,7 +6,11 @@ public class TestCombattantsMatch {
         LigueDeCombats combats = new LigueDeCombats("Kilonga", "La meilleurCombattants");
         LigueDeCombats combats1 = new LigueDeCombats("Tsiresy", "NosEnsemble");
 
-        Combattants comb = new Combattants("RDF", "La comedien", "")
+        Combattants comb = new Combattants("RDF", "La comedien", "Pascal", "70", "Votre nom" );
+        Combattants comb1 = new Combattants("CharlieDie", "Mario", "Biger", "90", "votre liste de combattants" );
+
+
+
 
     }
 }
