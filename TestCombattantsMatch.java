@@ -9,6 +9,9 @@ public class TestCombattantsMatch {
         Combattants comb = new Combattants("RDF", "La comedien", "Pascal", "70", "Votre nom" );
         Combattants comb1 = new Combattants("CharlieDie", "Mario", "Biger", "90", "votre liste de combattants" );
 
+        combats1.getNom(combats1);
+        combats.setEnsembleDeCombats(combats.getEnsembleDeCombats());
+        combats1.getNom(combats1);
 
 
 

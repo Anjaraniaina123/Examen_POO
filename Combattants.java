@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Combattants {
     private String nom;
     private String prenom;
@@ -13,6 +11,17 @@ public class Combattants {
         this.nomCombattants = nomCombattants;
         this.poids = poids;
         this.listeDeTitre = listeDeTitre;
+    }
+
+    @Override
+    public String toString() {
+        return "Combattants{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", nomCombattants='" + nomCombattants + '\'' +
+                ", poids='" + poids + '\'' +
+                ", listeDeTitre='" + listeDeTitre + '\'' +
+                '}';
     }
 
     public String getNom() {
@@ -31,7 +40,7 @@ public class Combattants {
         this.prenom = prenom;
     }
 
-    public String getNomCombattants() {
+    public String getNomCombattants(Combattants comb) {
         return nomCombattants;
     }
 
@@ -54,16 +63,12 @@ public class Combattants {
     public void setListeDeTitre(String listeDeTitre) {
         this.listeDeTitre = listeDeTitre;
     }
-
-
-    @Override
-    public String toString() {
-        return "Combattants{" +
-                "nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
-                ", nomCombattants='" + nomCombattants + '\'' +
-                ", poids='" + poids + '\'' +
-                ", listeDeTitre='" + listeDeTitre + '\'' +
-                '}';
+    public Combattants getCombattants(Combattants combattants) {
+        if (combattants.getNom().equals(nom)) {
+            return combattants;
+        }else{
+            return null;
+        }
     }
+
 }

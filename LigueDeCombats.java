@@ -9,7 +9,7 @@ public class LigueDeCombats {
         this.ensembleDeMatch = ensembleDeMatch;
     }
 
-    public String getNom() {
+    public String getNom(LigueDeCombats combats1) {
         return nom;
     }
 
@@ -31,5 +31,12 @@ public class LigueDeCombats {
 
     public void setEnsembleDeMatch(String ensembleDeMatch) {
         this.ensembleDeMatch = ensembleDeMatch;
+    }
+    public Object LigueDeCombats() {
+        if (nom == null || ensembleDeCombats == null || ensembleDeMatch == null) {
+                return null;
+        }else {
+            return ensembleDeCombats;
+        }
     }
 }

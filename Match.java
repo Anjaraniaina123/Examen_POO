@@ -28,7 +28,7 @@ public class Match {
 
     }
 
-    public String getDate() {
+    public String getDate(Match match2) {
         return date;
     }
 
@@ -36,7 +36,7 @@ public class Match {
         this.date = date;
     }
 
-    public String getEndroit() {
+    public String getEndroit(Match match1) {
         return endroit;
     }
 
@@ -53,6 +53,5 @@ public class Match {
                 ", endroit='" + endroit + '\'' +
                 '}';
     }
-
 }
 
